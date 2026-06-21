@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Customer CRM Form</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page">
+
+    <div class="crm-card">
+
+        <div class="header">
+
+            <div class="brand-badge">
+                Customer CRM
+            </div>
+
+            <h1>Customer Information Form</h1>
+
+            <p>
+                Fill customer information and send directly to WhatsApp.
+            </p>
+
+        </div>
+
+        <!-- CUSTOMER DETAILS -->
+
+        <div class="section-title">
+            Customer Details
+        </div>
+
+        <div class="grid">
+
+            <div class="field">
+                <label>Customer Name *</label>
+                <input
+                    id="name"
+                    type="text"
+                    placeholder="Enter customer name"
+                    autocomplete="name"
+                    required>
+            </div>
+
+            <div class="field">
+                <label>Mobile Number *</label>
+                <input
+                    id="mobile"
+                    type="tel"
+                    placeholder="Enter mobile number"
+                    autocomplete="tel"
+                    required>
+            </div>
+
+            <div class="field">
+                <label>Mother Name</label>
+                <input
+                    id="mother"
+                    type="text"
+                    placeholder="Enter mother name">
+            </div>
+
+            <div class="field">
+                <label>Marital Status</label>
+
+                <div class="select-wrapper">
+                    <select id="marital">
+                        <option value="Married">Married</option>
+                        <option value="Single">Single</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div
+                class="field"
+                id="spouseField">
+
+                <label>Spouse Name</label>
+
+                <input
+                    id="spouse"
+                    type="text"
+                    placeholder="Enter spouse name">
+
+            </div>
+
+            <div class="field">
+                <label>Own / Rent</label>
+
+                <div class="select-wrapper">
+                    <select id="ownership">
+                        <option value="Own">Own</option>
+                        <option value="Rent">Rent</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="field full-width">
+                <label>Current Address *</label>
+
+                <textarea
+                    id="address"
+                    placeholder="Enter current address"
+                    required></textarea>
+            </div>
+
+            <div class="field full-width">
+                <label>Office Address (Optional)</label>
+
+                <textarea
+                    id="officeAddress"
+                    placeholder="Enter office address"></textarea>
+            </div>
+
+            <div class="field full-width">
+                <label>Email Address</label>
+
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="Enter email address"
+                    autocomplete="email">
+            </div>
+
+        </div>
+
+        <!-- REFERENCE 1 -->
+
+        <div class="reference-card">
+
+            <div class="reference-header">
+                Reference 1
+            </div>
+
+            <div class="grid">
+
+                <div class="field">
+                    <label>Name</label>
+
+                    <input
+                        id="ref1name"
+                        type="text"
+                        placeholder="Reference name">
+                </div>
+
+                <div class="field">
+                    <label>Mobile</label>
+
+                    <input
+                        id="ref1mob"
+                        type="tel"
+                        placeholder="Reference mobile">
+                </div>
+
+                <div class="field full-width">
+                    <label>Address</label>
+
+                    <input
+                        id="ref1addr"
+                        type="text"
+                        placeholder="Reference address">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- REFERENCE 2 -->
+
+        <div class="reference-card">
+
+            <div class="reference-header">
+                Reference 2
+            </div>
+
+            <div class="grid">
+
+                <div class="field">
+                    <label>Name</label>
+
+                    <input
+                        id="ref2name"
+                        type="text"
+                        placeholder="Reference name">
+                </div>
+
+                <div class="field">
+                    <label>Mobile</label>
+
+                    <input
+                        id="ref2mob"
+                        type="tel"
+                        placeholder="Reference mobile">
+                </div>
+
+                <div class="field full-width">
+                    <label>Address</label>
+
+                    <input
+                        id="ref2addr"
+                        type="text"
+                        placeholder="Reference address">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BUTTON -->
+
+        <button
+            id="sendBtn"
+            class="send-btn"
+            onclick="sendWhatsApp()">
+
+            Send to WhatsApp
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
