@@ -54,32 +54,32 @@ function sendWhatsApp() {
 `👉🏻Customer name: ${document.getElementById("name").value}
 
 
-👉🏻mob no: ${document.getElementById("mobile").value}
-👉🏻mother name: ${document.getElementById("mother").value}
+👉🏻Mob no: ${document.getElementById("mobile").value}
+👉🏻Mother name: ${document.getElementById("mother").value}
 
-👉🏻 married/single: ${document.getElementById("marital").value}
+👉🏻 Married/Single: ${document.getElementById("marital").value}
 
-👉🏻if married spouse name: ${document.getElementById("spouse").value}
+👉🏻If married spouse name: ${document.getElementById("spouse").value}
 
-👉🏻current address; at:- ${document.getElementById("address").value}
+👉🏻Current address; at:- ${document.getElementById("address").value}
 
-👉🏻office address: ${document.getElementById("officeAddress").value}
+👉🏻Office address: ${document.getElementById("officeAddress").value}
 
-👉🏻Own/rent: ${document.getElementById("ownership").value}
+👉🏻Own/Rent: ${document.getElementById("ownership").value}
 
-👉🏻 personal mail id: ${document.getElementById("email").value}
+👉🏻 Personal mail id: ${document.getElementById("email").value}
 
 
-👉🏻two references
+👉🏻Two references
 
 1 Name-- ${document.getElementById("ref1name").value}
-Mob-- ${document.getElementById("ref1mob").value}
-Address-- ${document.getElementById("ref1addr").value}
+  Mob-- ${document.getElementById("ref1mob").value}
+  Address-- ${document.getElementById("ref1addr").value}
 
 
 2 Name-- ${document.getElementById("ref2name").value}
-Mob-- ${document.getElementById("ref2mob").value}
-Address-- ${document.getElementById("ref2addr").value}
+  Mob-- ${document.getElementById("ref2mob").value}
+  Address-- ${document.getElementById("ref2addr").value}
 `;
 
     const whatsappUrl =
