@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         } else {
 
-            spouseField.style.display = "flex";
+            spouseField.style.display = "block";
 
         }
     }
@@ -51,34 +51,35 @@ function sendWhatsApp() {
 
     const msg =
 
-`👉🏻Customer name: ${document.getElementById("name").value}
+`👉🏻Customer Name: ${document.getElementById("name").value}
 
 
-👉🏻Mob no: ${document.getElementById("mobile").value}
-👉🏻Mother name: ${document.getElementById("mother").value}
+👉🏻Mobile No: ${document.getElementById("mobile").value}
 
-👉🏻 Married/Single: ${document.getElementById("marital").value}
+👉🏻Mother Name: ${document.getElementById("mother").value}
 
-👉🏻If married spouse name: ${document.getElementById("spouse").value}
+👉🏻Married/Single: ${document.getElementById("marital").value}
 
-👉🏻Current address; at:- ${document.getElementById("address").value}
+👉🏻If Married Husband/Wife Name: ${document.getElementById("spouse").value}
 
-👉🏻Office address: ${document.getElementById("officeAddress").value}
+👉🏻Current Address; At:- ${document.getElementById("address").value}
+
+👉🏻Office Address: ${document.getElementById("officeAddress").value}
 
 👉🏻Own/Rent: ${document.getElementById("ownership").value}
 
-👉🏻 Personal mail id: ${document.getElementById("email").value}
+👉🏻Mail ID: ${document.getElementById("email").value}
 
 
-👉🏻Two references
+👉🏻Two References
 
 1 Name-- ${document.getElementById("ref1name").value}
-  Mob-- ${document.getElementById("ref1mob").value}
+  Mobile-- ${document.getElementById("ref1mob").value}
   Address-- ${document.getElementById("ref1addr").value}
 
 
 2 Name-- ${document.getElementById("ref2name").value}
-  Mob-- ${document.getElementById("ref2mob").value}
+  Mobile-- ${document.getElementById("ref2mob").value}
   Address-- ${document.getElementById("ref2addr").value}
 `;
 
